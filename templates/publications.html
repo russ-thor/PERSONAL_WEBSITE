@@ -1,0 +1,72 @@
+{% extends "layout.html" %} <!-- inherit layout.html template for common content -->
+
+<!-- override the block content in layout template -->
+{% block content %}
+
+<div class='container-generic'>
+
+  <!-- HOME TEXT -->
+  <article class='text-pub'>
+    <h1>How Burns Lake Community Forest Leveraged LiDAR Analysis and Visual Magnitude to Support Decision Making</h1>
+
+  <!-- HOME IMAGE -->
+  <figure id=cover>
+    <a href="..\static\images\BCFP_Spring_2021.pdf#page=16" target="_blank">
+    <img src="..\static\images\BCFP_cover.png" alt="BCFP Cover Picture" style="max-width:100%; height:auto">
+    </a>
+    <figcaption>Spring 2021 ed.</figcaption>
+  </figure>
+
+  <p>This article, published as the cover story in the Spring 2021 British Columbia Forest Professional (BCFP) Magazine, describes how Light Detection and Ranging (LiDAR) data can be used to improve Visual Resource Management (VRM) in BC. The benefits described include:
+
+  <ul>
+    <li>Significant accuracy improvements in elevation and tree height model inputs</li>
+    <li>Ability to perform detailed visibility analysis on the landbase</li>
+    <li>Improved statistics and data analytics reporting</li>
+    <li>Greater confidence in professional management decisions</li>
+  </ul>
+  </p>
+
+  </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div id="pub_wrapper">
+  PUBLICATIONS TEXT
+  <div class="pub_ex">
+  <figure id=cover>
+    <a href="..\static\images\BCFP_Spring_2021.pdf#page=16" target="_blank">
+    <img src="..\static\images\BCFP_cover.png" alt="BCFP Cover Picture" style="width:530px;height:530">
+    </a>
+  </figure>
+
+
+	<h3>How Burns Lake Community Forest Leveraged LiDAR Analysis and Visual Magnitude to Support Decision Making</h3>
+	<p>This article, published as the cover story in the Spring 2021 British Columbia Forest Professional (BCFP) Magazine, describes how Light Detection and Ranging (LiDAR) data can be used to improve Visual Resource Management (VRM) in BC. The benefits described include:</p>
+
+    <ul>
+      <li>Significant accuracy improvements in elevation and tree height model inputs</li>
+      <li>Ability to perform detailed visibility analysis on the landbase</li>
+      <li>Improved statistics and data analytic reporting</li>
+      <li>Greater confidence in professional management decisions</li>
+    </ul>
+  </div>
+</div> -->
+
+{% endblock content %}

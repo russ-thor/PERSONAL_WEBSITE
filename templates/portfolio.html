@@ -1,0 +1,58 @@
+{% extends "layout.html" %} <!-- inherit layout.html template for common content -->
+
+<!-- override the block content in layout template -->
+{% block content %}
+
+<div id="portfolio_wrapper">
+
+  <!-- PROJECT 1 -->
+  <div class="proj">
+   	<h2>Personal Website</h2>
+  	<figure>
+	  <a href="https://github.com/russ-thor/Personal_Website" target="_blank">
+	    <img src="..\static\images\website_pic.png" alt="Sample Proj1 Picture" style="max-width:100%; height:auto">
+      </a>
+	</figure>
+	  <h5>HTML5, CSS, JavaScript, Flask</h5>
+	  <p>This website was built to describe my analyst/ programming experience, display several professional and personal projects, and list the type of freelance projects I take on. It is built and deployed with Flask and is mobile responsive - you can check out the code on GitHub!</p>
+  </div>
+
+  <!-- PROJECT 2 -->
+  <div class="proj">
+  	<h2>Google News Sentiment Analysis</h2>
+	<figure>
+	  <a href="https://github.com/russ-thor/GOOGLE_NEWS_SENTIMENT" target="_blank">
+		<img src="..\static\images\sentiment.png" alt="Sample Proj2 Picture" style="max-width:100%; height:auto">
+	    </a>
+	</figure>
+	<h5>Python (m: Beautiful Soup, Pandas, Plotpy, Vader)</h5>
+    <p>I built a python program which accepts a user-defined search term and returns the sentiment of that headline using the results of 100 Google News articles. It compares the sentiment of the last one year vs. last one week by default.</p>
+  </div>
+
+  <!-- PROJECT 3 -->
+  <div class="proj">
+    <h2>Automated Stock Tracking</h2>
+	<figure>
+	  <a href="https://github.com/russ-thor/WEBSCRAPE_CANADIAN_STOCKS" target="_blank">
+	    <img src="..\static\images\lumber_metrics.png" alt="Sample Proj3 Picture" style="max-width:100%; height:auto">
+	  </a>
+	</figure>
+	  <h5>Python (m: Beautiful Soup, Pandas, Plotpy, EZGmail)</h5>
+	  <p>This project showcases pythons ability to automate many tasks. A Windows Task runs the program Mon-Fri after the stock market closes. The chosen tickers have their daily metrics scraped from Yahoo Finance with Requests/ Beautiful Soup and appended into a csv, a time series plot (both static + html) is created with Pandas and Plotpy, and the results are sent to the users email</p>
+  </div>
+
+  <!-- PROJECT 4 -->
+ <!--  <div class="proj">
+  	<h2>Example 4</h2>
+	<figure>
+	  <a href="#">
+		<img src="..\static\images\lumber_metrics.png" alt="Sample Proj4 Picture" style="max-width:100%; height:auto">
+		</a>
+	</figure>
+	<h5>HTML5, CSS, Flask</h5>
+	<p>This website was built to describe my analyst/ programming experience, display several professional and personal projects, and list the type of freelance projects I accept.</p>
+  </div> -->
+</div>
+
+{% endblock content %}
+

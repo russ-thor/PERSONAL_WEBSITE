@@ -1,0 +1,4 @@
+security.txt
+*.pyc
+__pychache__
+.idea

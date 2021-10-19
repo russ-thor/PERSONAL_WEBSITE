@@ -1,0 +1,18 @@
+{% extends "layout.html" %} <!-- inherit layout.html template for common content -->
+
+<!-- override the block content in layout template -->
+{% block content %}
+
+<div class='container-generic'>
+
+  <!-- HOME IMAGE -->
+  <img id='img-me' src="..\static\images\profile-picture-mtn.jpg" alt="Profile Picture" style="max-width:100%; height:auto">
+
+  <!-- HOME TEXT -->
+  <article id='text-home'>
+    <h1>Welcome to my site!</h1>
+    <p>My name is Russ and I work as an analyst/ programmer in the natural resource (forestry) sector in British Columbia, Canada. I spend my time at work solving forestry and environmental problems by using a mix of programming, spatial data (GIS) analysis, and collaboration. I also take on freelance projects - if you are interested in discussing a project, feel free to get in touch!</p>
+  </article>
+</div>
+
+{% endblock content %}

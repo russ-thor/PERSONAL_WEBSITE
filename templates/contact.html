@@ -1,0 +1,48 @@
+{% extends "layout.html" %} <!-- inherit layout.html template for common content -->
+
+<!-- override the block content in layout template -->
+{% block content %}
+
+<div id="contact_wrapper">
+  
+  <!-- CONTACT MAP -->
+  <div class="contact_container">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d373183.9630993174!2d-123.84360951224909!3d49.38214072923223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54863fc89d74aa8f%3A0x4804cff9b8554285!2sSchool%20Rd%2C%20Gibsons%2C%20BC!5e0!3m2!1sen!2sca!4v1632718710200!5m2!1sen!2sca" width=100% height=100% style="margin: 0px;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <!-- CONTACT FORM -->
+  <div class="contact_container">
+
+	<h3>Inquiry Details</h3>
+	  <p>Please leave your details below if you would like to get in touch.</p>
+
+	 <h3 id="incomplete-form">{{error_statement}}</h3>
+
+	<form class="my-form", action="\form" method='POST'>
+
+	  <div class="form-group">
+		<label>Name:</label> <br>
+		<input type="text" name="name" placeholder="Enter name" value="{{ name }}">
+	  </div>
+
+	  <div class="form-group">
+		<label>Email:</label> <br>
+		<input type="text" name="email" placeholder="Enter email" value="{{ email }}">
+	  </div>
+
+	  <div class="form-group">
+		<label>Company:</label> <br>
+		<input type="text" name="company" placeholder="Enter company" value="{{ company }}">
+	  </div>
+
+	  <div class="form-group">
+		<label>Message:</label> <br>
+		<textarea name="message" placeholder="Enter message" style="height:130px"> </textarea>
+	</div>
+
+	<input class="button" type="submit" name="">
+	</form>
+  </div>
+</div>
+
+{% endblock content %}

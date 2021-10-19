@@ -1,0 +1,72 @@
+<!--- parent template that other templates will inherit from --->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<html>
+
+<!-- HEADER -->
+<head>
+  <!-- Required metadata tags. Viewport sets appropriate view based on device used-->
+  <meta charset="utf-8">
+  <meta name="author" content="Russell Thorsteinsson">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- style CSS -->
+  <link rel="stylesheet" type="text/css" href="../static/style.css">
+
+  <!-- JavaScript -->
+  <script src="../static/script.js" defer></script>
+
+  <!-- title condition for page description -->
+  {% if title %}
+    <title>Russ T - {{ title }}</title>
+  {% else %}
+    <title>Russ T - website</title>
+  {% endif %}
+</head>
+
+  <header id="main-header">
+    <div>
+      <h1>Russ T, Analyst/ Programmer</h1>
+    </div>
+  </header> 
+
+<!-- BODY -->
+
+<body>
+  <nav class="navbar">
+    <div class="ext-links">
+      <a href="https://www.linkedin.com/in/russell-thorsteinsson/" target="_blank"><img src="../static/images/linked_in_black.png"></a>
+      <a href="https://github.com/russ-thor" target="_blank"><img src="../static/images/github_black.png"></a>
+
+    </div>
+    <a href="#" class='toggle-button'>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="services">Services</a></li>
+        <li><a href="portfolio">Portfolio</a></li>
+        <li><a href="publications">Publications</a></li>
+        <li><a href="contact">Contact</a></li>
+      </ul>
+
+    </div>
+  </nav>  
+
+  {% block content %}
+
+  {% endblock content %}
+
+  <!--- FOOTER --->
+  <footer id="main-footer">
+    <p>Copyright &copy; 2021 Russ T. Website</p>
+  </footer> 
+
+</body>
+</html> 

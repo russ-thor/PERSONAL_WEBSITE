@@ -1,0 +1,65 @@
+{% extends "layout.html" %} <!-- inherit layout.html template for common content -->
+
+<!-- override the block content in layout template -->
+{% block content %}
+
+  <!-- SERVICES TEXT -->
+<div id='services_wrapper'>
+  <div class='serv'>
+    <p>If you have a project in mind, reach out today. I offer a range of services in programming, data analysis, and Geographhic Information Systems (GIS). <br><br>
+
+    <i>I don't offer any <u>forestry-based</u> services at this time (conflict of interest)</i>
+    </p>
+
+  </div>
+
+  <div class='serv'>
+    <h2>Python Programming/ Automation</h2>
+    <figure>
+      <img src="..\static\images\script_picture.png" alt="example script" style="max-width:100%; height:auto">
+    </figure>
+    <ul>
+      <li>Data Analysis and Visualization</li>
+      <li>Webscraping, Data Compilation, and Data Cleaning</li>
+      <li>Automation of Repetitive Tasks</li>
+    </ul>
+  </div>
+
+  <div class='serv'>
+    <h2>Spatial/ GIS Analysis</h2>
+    <figure>
+      <img src="..\static\images\GIS_pic.png" alt="example GIS overview" style="max-width:100%; height:auto">
+    </figure>
+    <ul>
+      <li>LiDAR, Raster, and Vector Analysis</li>
+      <li>Script/ Tool Creation for Common Workflows</li>
+      <li>3D Modeling</li>
+    </ul>
+  </div>
+
+ <!--  <div class='serv'>
+    <h2>Basic Website Creation</h2>
+    <figure>
+      <img src="..\static\images\website_pic.png" alt="example website" style="max-width:100%; height:auto">
+    </figure>
+    <ul>
+      <li>Websites built with HTML5, CSS, JavaScript</li>
+      <li>Desktop and Mobile Responsive</li>
+      <li>This site is an example</li>
+    </ul>
+  </div> -->
+
+    <div class='serv'>
+    <h2>Drone Services (Coming Soon!)</h2>
+    <figure>
+      <img src="..\static\images\drone_pic.png" alt="drone picture" style="max-width:100%; height:auto">
+    </figure>
+    <ul>
+      <li>Aerial Imagery</li>
+      <li>Industrial Inspections</li>
+      <li>Real Estate Video/ Photography</li>
+    </ul>
+  </div>
+</div>
+
+{% endblock content %}
